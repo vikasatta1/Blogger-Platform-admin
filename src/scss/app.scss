@@ -1,0 +1,104 @@
+@import './libs/normalize.scss';
+@import './components/all.scss';
+
+
+.App {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  flex-basis: 80%;
+  padding-left: 2.4rem;
+  background: rgba(222, 219, 220, 0.2);
+  min-height: 100vh;
+  width: 100%;
+}
+
+///////////common
+.page-content {
+
+  margin-right: 6.4rem;
+}
+
+.grey-text {
+  color: $color-greyText;
+}
+
+.vector-button {
+  color: #1A1718;
+  margin-bottom: 1px;
+
+}
+/////item-page
+.page-content__item-page{
+  margin:3.5rem 6.4rem 0 0;
+
+}
+.main-header__item-page {
+  display: flex;
+  align-items: center;
+  p{
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.link-back{
+  display: flex;
+  margin-bottom: 3.6rem ;
+  p{
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:$neutral-Dark-60
+  }
+}
+
+
+
+
+///////////////vectors
+.rectangle-right__item-page {
+  margin: 0 2rem 0 2rem;
+  color: #797476;
+  width: 5px;
+}
+.arrowLeft{
+  color: $neutral-Dark-60;
+  margin-right: 1.4rem;
+}
+
+////////button
+.button-wrap {
+  display: flex;
+  justify-content: center;
+
+  button {
+    font-weight: bold;
+    font-size: 16px;
+    width: 153px;
+    height: 36px;
+    border-radius: 2px;
+    margin: 2em 0 3em 0;
+    background: none;
+    border: 1px solid $neutral-Dark-60;
+  }
+}
+/////////// add post or blogs button
+.wrap-button-add{
+  display: flex;
+  justify-content: end;
+  margin: 2.3rem 0 2.4rem 0;
+}

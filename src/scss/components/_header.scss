@@ -1,0 +1,17 @@
+.header{
+  height: 7rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+  background: #FCFBFB;
+  box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+  display: flex;
+  align-items: center;
+  h1{
+    padding-left: 6.4rem;
+    margin-bottom: 1.2rem;
+  }
+  p{
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+  }
+}

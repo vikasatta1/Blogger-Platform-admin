@@ -1,0 +1,25 @@
+.wrap-posts{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 3.4rem;
+}
+
+
+.button-home-post{
+    border: none;
+    width: 118px;
+    height: 36px;
+    background: #F8346B;
+    box-shadow: 0px 4px 18px rgba(248, 52, 107, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    text-align: center;
+    color: #FCFBFB;
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+

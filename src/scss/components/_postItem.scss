@@ -1,0 +1,57 @@
+@import '../variables';
+
+.postItem {
+  h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  width: 35rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 2rem 0;
+
+  .postItem-imgBig {
+    height: 20rem;
+    background: #fff;
+    margin-bottom: 1.8rem;
+  }
+
+  .postItem-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .description-logo {
+
+      flex-basis: 20%;
+
+      .logo-small {
+        background: #fff;
+        border-radius: 100%;
+        height: 7rem;
+        width: 7rem;
+      }
+    }
+
+    .description-text {
+      margin-left: 1rem;
+      flex-basis: 77%;
+      h3{
+        color:#1A1718 ;
+      }
+    }
+  }
+}

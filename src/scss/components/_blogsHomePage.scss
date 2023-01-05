@@ -1,0 +1,27 @@
+.main-header {
+  margin: 3rem 0 2rem 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #DEDBDC;
+  h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.button-home-blogs{
+  border: none;
+  width: 118px;
+  height: 36px;
+  background: #F8346B;
+  box-shadow: 0px 4px 18px rgba(248, 52, 107, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  color: #FCFBFB;
+  font-family: 'Inter',serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
