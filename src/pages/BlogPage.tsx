@@ -9,6 +9,7 @@ import {postType} from "../redux/posts-reducer";
 import {blogType} from "../redux/blogs";
 
 
+
 const BlogPage = () => {
     const {blogId} = useParams()
     const posts = useSelector<AppRootStateType, Array<postType>>(state => state.posts)
