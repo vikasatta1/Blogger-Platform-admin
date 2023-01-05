@@ -1,7 +1,7 @@
 import React from 'react';
 import {blogType} from "../../redux/blogs";
 import {NavLink} from "react-router-dom";
-import Setting from "../../assets/icons-tsx/Setting";
+import Setting from "../common/Setting";
 
 
 const BlogItem = ({id, name, description, websiteUrl}: blogType) => {
@@ -17,7 +17,7 @@ const BlogItem = ({id, name, description, websiteUrl}: blogType) => {
                     <NavLink to={`/blog/${id}`}>
                         <h3>{name}</h3>
                     </NavLink>
-                    < Setting marginTop={'1'} marginRight={''}/>
+                    < Setting marginTopRight={'1'} item={'blog'}/>
                 </div>
 
                 <p className={'p-web'}>Website: <a>{websiteUrl}</a></p>

@@ -1,0 +1,30 @@
+.setting-modal_blog {
+  position: absolute;
+  background: #FCFBFB;
+  width: 134px;
+  height: 84px;
+  border: 1px solid #DEDBDC;
+  border-radius: 2px;
+  right: 0rem;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+    padding-top: 0.7rem;
+    margin-left: 1.7rem;
+  }
+}
+
+.setting-modal_block {
+  padding-left: 1.7rem;
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}

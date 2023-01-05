@@ -1,7 +1,7 @@
 import React from 'react';
 import {postType} from "../../redux/posts-reducer";
 import {NavLink} from "react-router-dom";
-import Setting from "../../assets/icons-tsx/Setting";
+import Setting from "../common/Setting";
 
 
 const PostItem = ({id, title, shortDescription, content, blogId, blogName, createdAt}: postType) => {
@@ -21,7 +21,7 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
                         <NavLink to={`/post/${id}`}>
                             <h3>{title}</h3>
                         </NavLink>
-                        <Setting marginTop={''} marginRight={'1'}/>
+                        <Setting marginTopRight={'1'} item={'post'}/>
                     </div>
                     <p>The best blog in your village</p>
                     <p className={'grey-text'}>12.12.2022</p>

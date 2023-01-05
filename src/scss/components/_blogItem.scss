@@ -1,6 +1,7 @@
 @import '../variables';
 
 .blogItem-wrap {
+  position: relative;
   height: 18rem;
   display: flex;
   flex-direction: row;
