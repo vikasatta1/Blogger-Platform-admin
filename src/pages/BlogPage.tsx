@@ -2,12 +2,12 @@ import React from 'react';
 import vector from '../assets/vector-button.svg';
 import arrowLeft from "../assets/arrow-left.svg";
 import PostForBlogItemPage from "../components/blog/Post-for-blog-item-page";
-import {useParams} from "react-router-dom";
+import {NavLink, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../redux/store";
 import {postType} from "../redux/posts-reducer";
 import {blogType} from "../redux/blogs";
-
+import BackTo from "../components/common/BackTo";
 
 
 const BlogPage = () => {
@@ -36,12 +36,8 @@ const BlogPage = () => {
                     <p className={''}>The best blog in our village</p>
                 </div>
             </div>
-            <div className={'link-back__blog-page'}>
-                <img src={arrowLeft} alt={'arrowLeft'} className={'arrowLeft'}/>
-                <p>Back to posts</p>
-            </div>
+            <BackTo href={'blogs'} img={arrowLeft}/>
             <div className="banner-blog">
-
             </div>
             <div className={'margin-right'}>
                 <div className={'blogItem-wrap__blog-page'}>

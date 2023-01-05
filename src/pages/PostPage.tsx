@@ -5,6 +5,7 @@ import {postType} from "../redux/posts-reducer";
 import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../redux/store";
+import BackTo from "../components/common/BackTo";
 
 
 
@@ -22,10 +23,7 @@ const PostPage = () => {
                 </div>
             </div>
             <div className="page-content__item-page">
-                <div className={'link-back'}>
-                    <img src={arrowLeft} alt={'arrowLeft'} className={'arrowLeft'}/>
-                    <p>Back to posts</p>
-                </div>
+                <BackTo href={'posts'} img={arrowLeft}/>
                 <div className={'description-post'}>
                     <div className={'logo-small'}>
                     </div>
