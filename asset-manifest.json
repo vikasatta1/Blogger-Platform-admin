@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Blogger-Platform-admin/static/css/main.240f8c56.css",
+    "main.js": "/Blogger-Platform-admin/static/js/main.84fe9bbd.js",
+    "static/js/787.0bcec953.chunk.js": "/Blogger-Platform-admin/static/js/787.0bcec953.chunk.js",
+    "index.html": "/Blogger-Platform-admin/index.html",
+    "static/media/arrow-left.svg": "/Blogger-Platform-admin/static/media/arrow-left.e482012cd093fa9c5d133b6cc61584f6.svg",
+    "static/media/rectangle-right.svg": "/Blogger-Platform-admin/static/media/rectangle-right.bd82093abbf640a49c6515c4ffeb96d3.svg",
+    "static/media/vector-button.svg": "/Blogger-Platform-admin/static/media/vector-button.b36f57bb027c75fa722cf58f317db1f5.svg",
+    "main.240f8c56.css.map": "/Blogger-Platform-admin/static/css/main.240f8c56.css.map",
+    "main.84fe9bbd.js.map": "/Blogger-Platform-admin/static/js/main.84fe9bbd.js.map",
+    "787.0bcec953.chunk.js.map": "/Blogger-Platform-admin/static/js/787.0bcec953.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.240f8c56.css",
+    "static/js/main.84fe9bbd.js"
+  ]
+}
