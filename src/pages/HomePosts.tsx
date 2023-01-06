@@ -15,7 +15,7 @@ const HomePosts = () => {
 
             <div className={'wrap-button-add'}>
                 <div className="page-content">
-                    <button className={'button-home-post'}>
+                    <button className={'button-home-add'}>
                         Add post
                     </button>
                 </div>

@@ -1,8 +1,8 @@
-import React from 'react';
-import vector from '../assets/vector-button.svg';
+import React, {useState} from 'react';
+import vector from '../assets/rectangle-right.svg';
 import arrowLeft from "../assets/arrow-left.svg";
 import PostForBlogItemPage from "../components/blog/Post-for-blog-item-page";
-import {NavLink, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../redux/store";
 import {postType} from "../redux/posts-reducer";
@@ -16,59 +16,35 @@ const BlogPage = () => {
     const blogs = useSelector<AppRootStateType, Array<blogType>>(state => state.blogs)
     const blog = blogs.find(b => b.id === blogId)
 
-    const postsMap = posts.map((p: postType) =>
-        < PostForBlogItemPage
-            id={p.id}
-            key={p.id}
-            title={p.title}
-            blogId={p.blogId}
-            content={p.content}
-            blogName={p.blogName}
-            createdAt={p.createdAt}
-            shortDescription={p.shortDescription}
-        />)
+    const [name,setName] = useState(blog?.name)
+    const [website,setWebsite] = useState(blog?.websiteUrl)
+    const [description,setDescription] = useState(blog?.description)
+
     return (
         <>
             <div className={'main-header'}>
                 <div className={'main-header__item-page'}>
-                    <h2>Posts</h2>
+                    <h2>Blogs</h2>
                     <img src={vector} alt={'vector'} className={'rectangle-right__item-page'}/>
-                    <p className={''}>The best blog in our village</p>
+                    <p className={''}>Add</p>
                 </div>
             </div>
             <BackTo href={'blogs'} img={arrowLeft}/>
-            <div className="banner-blog">
-            </div>
             <div className={'margin-right'}>
-                <div className={'blogItem-wrap__blog-page'}>
-                    <div className={'blog-wrap'}>
-                        <div className="blogItem-logo-wrap">
-                            <div className={'blogItem-logo__blog-page'}>
-                            </div>
-                        </div>
-
-                        <div className="blogItem-content__blog-page">
-                            <h2>{blog?.name}</h2>
-                            <p className={'date'}>Blog creation date:<span> 12.12.2022</span></p>
-                            <p className={'p-web'}>Website: <a>{blog?.websiteUrl}</a></p>
-                            <p>{blog?.description}</p>
-                        </div>
-                    </div>
-
-
-                    <div className={'button-wrap__blog-page'}>
-                        <button>Show more <img className={'vector-button-blog-page'} src={vector} alt={'vector'}/>
-                        </button>
-                    </div>
+                <div className="banner-blog">
+                </div>
+                <div className={'blog-form'}>
+                    <p>Blog Name</p>
+                    <input value={name}/>
+                    <p>Website</p>
+                    <input value={website}/>
+                    <p>Blog Description</p>
+                    <textarea value={description}/>
                 </div>
 
-
-                <div className='wrap-blogs__blog-page'>
-                    {postsMap}
+                <div className={'wrap-button_blog-page'}>
+                    <button>Add blog</button>
                 </div>
-            </div>
-            <div className={'button-wrap'}>
-                <button>Show more <img className={'vector-button'} src={vector} alt={'vector'}/></button>
             </div>
         </>
     );

@@ -19,7 +19,7 @@ const PostPage = () => {
                 <div className={'main-header__item-page'}>
                     <h2>Posts</h2>
                     <img src={vector} alt={'vector'} className={'rectangle-right__item-page'}/>
-                    <p className={''}>{post?.shortDescription}</p>
+                    <p className={''}>Add</p>
                 </div>
             </div>
             <div className="page-content__item-page">

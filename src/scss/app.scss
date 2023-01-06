@@ -56,7 +56,24 @@
     line-height: 16px;
   }
 }
-
+//linc back to
+.navLink-back {
+  width: 13rem;
+  height: 3rem;
+  margin: 3.5rem 0 2rem 0;
+}
+.link-back__item-page {
+  display: flex;
+  margin-bottom: 1.2rem;
+  p {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $neutral-Dark-60
+  }
+}
 .link-back {
   display: flex;
   margin-bottom: 3.6rem;
@@ -120,4 +137,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+//////button
+.button-home-add {
+  border: none;
+  width: 118px;
+  height: 36px;
+  background: #F8346B;
+  box-shadow: 0px 4px 18px rgba(248, 52, 107, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  color: #FCFBFB;
+  font-family: 'Inter',serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }

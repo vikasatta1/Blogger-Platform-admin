@@ -19,7 +19,7 @@ const HomeBlogs = () => {
             </div>
             <div className={'page-content'}>
                 <div className={'wrap-button-add'}>
-                    <button className={'button-home-blogs'}>
+                    <button className={'button-home-add'}>
                         Add blog
                     </button>
                 </div>
