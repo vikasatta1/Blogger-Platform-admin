@@ -1,11 +1,11 @@
 import React from 'react';
-import vector from '../assets/rectangle-right.svg';
-import arrowLeft from '../assets/arrow-left.svg';
-import {postType} from "../redux/posts-reducer";
+import vector from '../../assets/rectangle-right.svg';
+import arrowLeft from '../../assets/arrow-left.svg';
+import {postType} from "../../redux/posts-reducer";
 import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
-import {AppRootStateType} from "../redux/store";
-import BackTo from "../components/common/BackTo";
+import {AppRootStateType} from "../../redux/store";
+import BackTo from "../../components/common/BackTo";
 
 
 

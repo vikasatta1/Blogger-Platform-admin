@@ -1,12 +1,12 @@
 import React from 'react';
 import {Route, Routes} from 'react-router-dom'
-import HomeBlogs from "./pages/HomeBlogs";
+import HomeBlogs from "./pages/blog/HomeBlogs";
 import './scss/app.scss';
-import HomePosts from "./pages/HomePosts";
+import HomePosts from "./pages/post/HomePosts";
 import Header from "./components/header/Header";
 import Navigation from "./components/navigation/Navigation";
-import BlogPage from "./pages/BlogPage";
-import PostPage from "./pages/PostPage";
+import BlogPage from "./pages/blog/BlogPage";
+import PostPage from "./pages/post/PostPage";
 
 
 function App() {

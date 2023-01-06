@@ -1,9 +1,9 @@
 import React from 'react';
-import PostItem from "../components/post/PostItem";
-import vector from '../assets/vector-button.svg'
+import PostItem from "../../components/post/PostItem";
+import vector from '../../assets/vector-button.svg'
 import {useSelector} from "react-redux";
-import {AppRootStateType} from "../redux/store";
-import {postType} from "../redux/posts-reducer";
+import {AppRootStateType} from "../../redux/store";
+import {postType} from "../../redux/posts-reducer";
 
 const HomePosts = () => {
     const posts = useSelector<AppRootStateType, Array<postType>>(state => state.posts)
