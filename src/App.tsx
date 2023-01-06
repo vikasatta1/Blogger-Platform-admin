@@ -7,6 +7,7 @@ import Header from "./components/header/Header";
 import Navigation from "./components/navigation/Navigation";
 import BlogPage from "./pages/blog/BlogPage";
 import PostPage from "./pages/post/PostPage";
+import NewBlog from "./pages/blog/New-blog";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                         <Route path={'/'} element={<HomeBlogs/>}/>
                         <Route path={'/blogs'} element={<HomeBlogs/>}/>
                         <Route path={'/posts'} element={<HomePosts/>}/>
+                        <Route path={'/blogs/newBlog'} element={<NewBlog/>}/>
                         <Route path={'blog/:blogId'} element={<BlogPage/>}/>
                         <Route path={'post/:postId'} element={<PostPage/>}/>
                     </Routes>

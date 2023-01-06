@@ -26,7 +26,9 @@ const BlogPage = () => {
                 <div className={'main-header__item-page'}>
                     <h2>Blogs</h2>
                     <img src={vector} alt={'vector'} className={'rectangle-right__item-page'}/>
-                    <p className={''}>Add</p>
+                    <p>{blog?.name}</p>
+                    <img src={vector} alt={'vector'} className={'rectangle-right__item-page'}/>
+                    <p className={'p-edit'}>Edit</p>
                 </div>
             </div>
             <BackTo href={'blogs'} img={arrowLeft}/>
