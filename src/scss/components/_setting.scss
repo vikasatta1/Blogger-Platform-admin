@@ -1,3 +1,33 @@
+.setting-modal_post {
+  position: absolute;
+  z-index: 1;
+  background: #FCFBFB;
+  width: 134px;
+  height: 84px;
+  border: 1px solid #DEDBDC;
+  border-radius: 2px;
+  right: -5.1rem;
+  top: 25rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+    padding-top: 0.7rem;
+    margin-left: 1.7rem;
+
+    &:hover {
+      color: #F8346B;
+
+    }
+  }
+}
+
 .setting-modal_blog {
   position: absolute;
   background: #FCFBFB;
@@ -19,6 +49,10 @@
     color: #1A1718;
     padding-top: 0.7rem;
     margin-left: 1.7rem;
+
+    &:hover {
+      color: #F8346B;
+    }
   }
 }
 
@@ -28,4 +62,12 @@
   flex-basis: 50%;
   align-items: center;
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+  }
+
+
 }
+
+
