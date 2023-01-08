@@ -25,6 +25,8 @@ function App() {
                         <Route path={'blog/:blogId'} element={<BlogPage/>}/>
                         <Route path={'post/:postId'} element={<PostPage/>}/>
                     </Routes>
+
+                 {/*   <BasicModal closeWindow={()=>{}} header={'a blog'} onClickNo={()=>{}} onClickYes={()=>{}} item={'blog'}/>*/}
                 </div>
             </div>
 
