@@ -1,10 +1,18 @@
-import React, {useState} from 'react';
-import vector from '../../assets/rectangle-right.svg'
-import arrowLeft from '../../assets/arrow-left.svg'
+import React from 'react';
+import vector from "../../assets/rectangle-right.svg";
 import BackTo from "../../components/common/BackTo";
+import arrowLeft from "../../assets/arrow-left.svg";
+import {blogType} from "../../redux/blogs";
+import {useParams} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "../../redux/store";
 
-const NewBlog = () => {
-    const [] = useState('')
+
+
+
+const EditBlogPage = () => {
+    const {blogId} = useParams()
+    const blog = useSelector<AppRootStateType, Array<blogType>>(state => state.blogs).find(b => b.id === blogId)
     return (
         <>
             <div className={'main-header'}>
@@ -20,18 +28,19 @@ const NewBlog = () => {
                 </div>
                 <div className={'blog-form'}>
                     <p>Blog Name</p>
-                    <input />
+                    <input value={blog?.name}/>
                     <p>Website</p>
-                    <input />
+                    <input value={blog?.websiteUrl}/>
                     <p>Blog Description</p>
-                    <textarea />
+                    <textarea  value={blog?.description}/>
                 </div>
                 <div className={'wrap-button_blog-page'}>
                     <button>Add blog</button>
                 </div>
             </div>
+
         </>
     );
 };
 
-export default NewBlog;
+export default EditBlogPage;

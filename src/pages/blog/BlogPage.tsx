@@ -12,9 +12,8 @@ import BackTo from "../../components/common/BackTo";
 
 const BlogPage = () => {
     const {blogId} = useParams()
-    const posts = useSelector<AppRootStateType, Array<postType>>(state => state.posts)
-    const blogs = useSelector<AppRootStateType, Array<blogType>>(state => state.blogs)
-    const blog = blogs.find(b => b.id === blogId)
+    const blog = useSelector<AppRootStateType, Array<blogType>>(state => state.blogs).find(b => b.id === blogId)
+
 
     const [name,setName] = useState(blog?.name)
     const [website,setWebsite] = useState(blog?.websiteUrl)

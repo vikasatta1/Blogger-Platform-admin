@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Trash from "../../assets/icons-tsx/trash";
 import Pencil from "../../assets/icons-tsx/pencil";
 import {BasicModal} from "../modal/BasicModal";
+import {NavLink} from "react-router-dom";
 
 type SettingPropsType = {
     marginTopRight: string,
@@ -9,8 +10,9 @@ type SettingPropsType = {
     itemId: any
     openDeleteModal: () => void
 
+
 }
-const Setting = ({marginTopRight, item, openDeleteModal}: SettingPropsType) => {
+const Setting = ({marginTopRight, item, openDeleteModal,itemId}: SettingPropsType) => {
     const [open, setOpen] = useState(false)
     const setOpenHandler = () => {
         setOpen(!open)
@@ -31,9 +33,11 @@ const Setting = ({marginTopRight, item, openDeleteModal}: SettingPropsType) => {
                     <Trash/>
                     <p>Delete</p>
                 </div>
-                <div className={'setting-modal_block'}>
+                <div className={'setting-modal_block'} >
+                    <NavLink to={`/blog/edit/${itemId}`}>
                     <Pencil/>
                     <p>Edit</p>
+                    </NavLink>
                 </div>
 
             </div> : ''}

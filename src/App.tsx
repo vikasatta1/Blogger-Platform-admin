@@ -8,6 +8,7 @@ import Navigation from "./components/navigation/Navigation";
 import BlogPage from "./pages/blog/BlogPage";
 import PostPage from "./pages/post/PostPage";
 import NewBlog from "./pages/blog/New-blog";
+import EditBlogPage from "./pages/blog/EditBlogPage";
 
 
 function App() {
@@ -21,12 +22,11 @@ function App() {
                         <Route path={'/'} element={<HomeBlogs/>}/>
                         <Route path={'/blogs'} element={<HomeBlogs/>}/>
                         <Route path={'/posts'} element={<HomePosts/>}/>
+                        <Route path={'/blog/edit/:blogId'} element={<EditBlogPage/>}/>
                         <Route path={'/blogs/newBlog'} element={<NewBlog/>}/>
                         <Route path={'blog/:blogId'} element={<BlogPage/>}/>
                         <Route path={'post/:postId'} element={<PostPage/>}/>
                     </Routes>
-
-                 {/*   <BasicModal closeWindow={()=>{}} header={'a blog'} onClickNo={()=>{}} onClickYes={()=>{}} item={'blog'}/>*/}
                 </div>
             </div>
 
