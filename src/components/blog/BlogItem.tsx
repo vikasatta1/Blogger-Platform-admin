@@ -6,8 +6,6 @@ import {BasicModal} from "../modal/BasicModal";
 
 
 const BlogItem = ({id, name, description, websiteUrl}: blogType) => {
-    const navigate = useNavigate()
-
     const [openModalDelete,setOpenDelete] = useState(false)
     const OpenDeleteModalHandler = () => {
         setOpenDelete(!openModalDelete)

@@ -21,7 +21,7 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
                         <NavLink to={`/post/${id}`}>
                             <h3>{title}</h3>
                         </NavLink>
-               {/*         <Setting marginTopRight={'1'} item={'post'}/>*/}
+                      {/*  <Setting marginTopRight={'1'} item={'post'} itemId={id} openDeleteModal={}/>*/}
                     </div>
                     <p>The best blog in your village</p>
                     <p className={'grey-text'}>12.12.2022</p>
