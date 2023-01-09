@@ -4,6 +4,7 @@ import vector from '../../assets/vector-button.svg'
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../../redux/store";
 import {postType} from "../../redux/posts-reducer";
+import AddPostModal from "../../components/modal/AddPostModal";
 
 const HomePosts = () => {
     const posts = useSelector<AppRootStateType, Array<postType>>(state => state.posts)
@@ -38,6 +39,7 @@ const HomePosts = () => {
             <div className={'button-wrap'}>
                 <button>Show more <img className={'vector-button'} src={vector} alt={'vector'}/></button>
             </div>
+             <AddPostModal open={true}/>
 
         </>
     );

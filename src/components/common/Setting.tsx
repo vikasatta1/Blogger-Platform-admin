@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Trash from "../../assets/icons-tsx/trash";
 import Pencil from "../../assets/icons-tsx/pencil";
-import {BasicModal} from "../modal/BasicModal";
 import {NavLink} from "react-router-dom";
 
 type SettingPropsType = {

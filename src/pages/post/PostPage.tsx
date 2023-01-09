@@ -6,6 +6,7 @@ import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../../redux/store";
 import BackTo from "../../components/common/BackTo";
+import AddPostModal from "../../components/modal/AddPostModal";
 
 
 
@@ -48,6 +49,7 @@ const PostPage = () => {
                     {post?.content}
                 </div>
             </div>
+
 
         </>
     );
