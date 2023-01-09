@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PostItem from "../../components/post/PostItem";
 import vector from '../../assets/vector-button.svg'
 import {useSelector} from "react-redux";
@@ -7,7 +7,11 @@ import {postType} from "../../redux/posts-reducer";
 import AddPostModal from "../../components/modal/AddPostModal";
 
 const HomePosts = () => {
+    const [openAddPostModal,setOpenAddPostModal] = useState(false)
     const posts = useSelector<AppRootStateType, Array<postType>>(state => state.posts)
+    const setAddPostModalHandler = () => {
+        setOpenAddPostModal(!openAddPostModal)
+    }
     return (
         <>
             <div className={'main-header'}>
@@ -16,7 +20,7 @@ const HomePosts = () => {
 
             <div className={'wrap-button-add'}>
                 <div className="page-content">
-                    <button className={'button-home-add'}>
+                    <button className={'button-home-add'} onClick={setAddPostModalHandler}>
                         Add post
                     </button>
                 </div>
@@ -39,7 +43,7 @@ const HomePosts = () => {
             <div className={'button-wrap'}>
                 <button>Show more <img className={'vector-button'} src={vector} alt={'vector'}/></button>
             </div>
-             <AddPostModal open={true}/>
+             <AddPostModal open={openAddPostModal} closeModal={setAddPostModalHandler} />
 
         </>
     );

@@ -8,9 +8,10 @@ type SettingPropsType = {
     item: string
     itemId: any
     openDeleteModal: () => void
+    setEditModalHandler?:()=>void
 
 }
-const Setting = ({marginTopRight, item, openDeleteModal,itemId}: SettingPropsType) => {
+const Setting = ({marginTopRight, item, openDeleteModal,itemId,setEditModalHandler}: SettingPropsType) => {
     const [open, setOpen] = useState(false)
     const setOpenHandler = () => {
         setOpen(!open)
@@ -32,10 +33,16 @@ const Setting = ({marginTopRight, item, openDeleteModal,itemId}: SettingPropsTyp
                     <p>Delete</p>
                 </div>
                 <div  >
-                    <NavLink to={`/${item}/edit/${itemId}`} className={'setting-modal_block'}>
+                    {item === 'blog' ?  <NavLink to={`/${item}/edit/${itemId}`} className={'setting-modal_block'} onClick={setEditModalHandler}>
                         <Pencil/>
                         <p>Edit</p>
-                    </NavLink>
+                    </NavLink> :
+
+                        <div className={'setting-modal_block'} onClick={setEditModalHandler}>
+                            <Pencil/>
+                            <p>Edit</p>
+                        </div>   }
+
                 </div>
 
             </div> : ''}

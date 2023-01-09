@@ -3,21 +3,26 @@ import {postType} from "../../redux/posts-reducer";
 import {NavLink} from "react-router-dom";
 import Setting from "../common/Setting";
 import {BasicModal} from "../modal/BasicModal";
+import EditPostModal from "../modal/EditPostModal";
 
 
 const PostItem = ({id, title, shortDescription, content, blogId, blogName, createdAt}: postType) => {
     const [openModalDelete,setOpenDelete] = useState(false)
+    const [openModalEdit,setOpenModalEdit] = useState(false)
     const OpenDeleteModalHandler = () => {
         setOpenDelete(!openModalDelete)
     }
-    const CloseModal = () => {
-        setOpenDelete(false)
+    const setEditModalHandler = () => {
+        setOpenModalEdit(!openModalEdit)
     }
+
     const onClickYesHandler = () => {}
     const onClickNoHandler = () => {}
 
+
     return (
         <div className={'postItem'}>
+            {openModalEdit && <EditPostModal open={openModalEdit} closeModal={setEditModalHandler} title={title} blogName={blogName}/>}
             <div className="postItem-imgBig">
 
             </div>
@@ -32,7 +37,7 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
                         <NavLink to={`/post/${id}`}>
                             <h3>{title}</h3>
                         </NavLink>
-                        <Setting marginTopRight={'1'} item={'post'} itemId={id} openDeleteModal={OpenDeleteModalHandler}  />
+                        <Setting marginTopRight={'1'} item={'post'} itemId={id} openDeleteModal={OpenDeleteModalHandler} setEditModalHandler={setEditModalHandler} />
                     </div>
                     <p>The best blog in your village</p>
                     <p className={'grey-text'}>12.12.2022</p>
@@ -42,10 +47,11 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
             <BasicModal
                 header={'post'}
                 open={openModalDelete}
-                closeModal={CloseModal}
+                closeModal={setEditModalHandler}
                 onClickNo={onClickNoHandler}
                 onClickYes={onClickYesHandler}
                 item={'post'} />}
+
         </div>
     );
 };
