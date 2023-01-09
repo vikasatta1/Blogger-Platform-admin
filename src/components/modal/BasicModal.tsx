@@ -24,7 +24,7 @@ const classWrap =open ? 'wrapper-basic-modal open' : 'wrapper-basic-modal'
                 </div>
                 <p>Are you sure you want delete this {item}?</p>
                 <div className={'wrap-button-yes-no'}>
-                    <button onClick={onClickNo} className={'button-no'}>No</button>
+                    <button onClick={onClickNo} className={'button-no'} >No</button>
                     <button onClick={onClickYes} className={'button-yes'}>Yes</button>
                 </div>
             </div>

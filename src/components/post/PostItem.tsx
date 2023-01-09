@@ -17,7 +17,7 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
     }
 
     const onClickYesHandler = () => {}
-    const onClickNoHandler = () => {}
+
 
 
     return (
@@ -47,8 +47,8 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
             <BasicModal
                 header={'post'}
                 open={openModalDelete}
-                closeModal={setEditModalHandler}
-                onClickNo={onClickNoHandler}
+                closeModal={OpenDeleteModalHandler}
+                onClickNo={OpenDeleteModalHandler}
                 onClickYes={onClickYesHandler}
                 item={'post'} />}
 
