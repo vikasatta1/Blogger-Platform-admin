@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {blogType} from "../../redux/blogs";
 import {NavLink, useNavigate} from "react-router-dom";
 import Setting from "../common/Setting";
-import {BasicModal} from "../modal/BasicModal";
+import {DeleteModal} from "../modal/DeleteModal";
 
 
 const BlogItem = ({id, name, description, websiteUrl}: blogType) => {
@@ -35,7 +35,7 @@ const BlogItem = ({id, name, description, websiteUrl}: blogType) => {
                 <p>{description}</p>
             </div>
             {openModalDelete &&
-            <BasicModal
+            <DeleteModal
                 header={'blog'}
                 open={openModalDelete}
                 closeModal={CloseModal}

@@ -13,7 +13,7 @@ type ModalWindowPropsType = {
 
 }
 
-export const BasicModal = ({header,closeModal,onClickNo,onClickYes,item,open}: ModalWindowPropsType) => {
+export const DeleteModal = ({header,closeModal,onClickNo,onClickYes,item,open}: ModalWindowPropsType) => {
 const classWrap =open ? 'wrapper-basic-modal open' : 'wrapper-basic-modal'
     return (
         <div className={classWrap}>

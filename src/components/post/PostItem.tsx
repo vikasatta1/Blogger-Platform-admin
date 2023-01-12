@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {postType} from "../../redux/posts-reducer";
 import {NavLink} from "react-router-dom";
 import Setting from "../common/Setting";
-import {BasicModal} from "../modal/BasicModal";
+import {DeleteModal} from "../modal/DeleteModal";
 import EditPostModal from "../modal/EditPostModal";
 
 
@@ -44,7 +44,7 @@ const PostItem = ({id, title, shortDescription, content, blogId, blogName, creat
                 </div>
             </div>
             {openModalDelete &&
-            <BasicModal
+            <DeleteModal
                 header={'post'}
                 open={openModalDelete}
                 closeModal={OpenDeleteModalHandler}
