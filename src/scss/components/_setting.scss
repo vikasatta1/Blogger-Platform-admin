@@ -1,3 +1,4 @@
+@import "../variables";
 .setting-modal_post {
   position: absolute;
   z-index: 1;
@@ -12,11 +13,7 @@
   flex-direction: column;
 
   p {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    @extend %normal-400-14-24;
     color: #1A1718;
     padding-top: 0.7rem;
     margin-left: 1.7rem;
@@ -41,11 +38,7 @@
   flex-direction: column;
 
   p {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    @extend %normal-400-14-24;
     color: #1A1718;
     padding-top: 0.7rem;
     margin-left: 1.7rem;

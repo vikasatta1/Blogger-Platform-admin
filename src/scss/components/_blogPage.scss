@@ -10,35 +10,23 @@
 
 .blog-form {
   p {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    @extend %normal-400-14-24;
     color: #737067;
     margin-top: 2.4rem;
 
   }
 
   input {
+    @extend %normal-400-16-24;
     width: 100%;
     background:none;
     border: none;
     border-bottom: 1px solid  #DEDBDC;
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
   }
   textarea{
+    @extend %normal-400-16-24;
     width: 100%;
     padding: 0.6rem 1.2rem 1.8rem 1.2rem;
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
     background: none;
     border: 1px solid #DEDBDC;
     border-radius: 2px;
@@ -51,11 +39,7 @@
 }
 
 .p-edit{
-  font-family: 'Inter',serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  @extend %normal-400-12-16;
   letter-spacing: 0.02em;
   color: #1A1718;
 }
@@ -64,17 +48,13 @@
 display: flex;
   justify-content: end;
   button{
+    @extend %normal-600-14-20;
     background: #F8346B;
     box-shadow: 0px 4px 18px rgba(248, 52, 107, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
     border-radius: 2px;
     width: 14.3rem;
     height: 3.6rem;
     border: none;
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2rem;
     color: #FCFBFB;
     cursor: pointer;
   }

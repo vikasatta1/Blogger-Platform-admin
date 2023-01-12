@@ -1,9 +1,76 @@
-$color-black:#1A1718;
-$color-white:#FCFBFB;
-$neutral-Dark--30:#737067;
-$neutral-Dark-60:#1A1718;
-$neutral-Light-10:rgba(222, 219, 220, 1);
-$color-greyText:#797476;
+$color-black: #1A1718;
+$color-white: #FCFBFB;
+$neutral-Dark--30: #737067;
+$neutral-Dark-60: #1A1718;
+$neutral-Light-10: rgba(222, 219, 220, 1);
+$color-greyText: #797476;
 /* Neutral Dark/+30 */
 
-$neutral-Dark-plus30:#797476;
+$neutral-Dark-plus30: #797476;
+
+
+%Inter-normal-400 {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%Inter-normal-500 {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+%Inter-normal-600 {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+//serif
+%normal-400-14-24 {
+  @extend %Inter-normal-400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+%normal-400-12-16 {
+  @extend %Inter-normal-400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+%normal-400-16-24 {
+  @extend %Inter-normal-400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+%normal-400-18-24 {
+  @extend %Inter-normal-400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+%normal-500-20-24 {
+  @extend %Inter-normal-500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+%normal-600-22-24 {
+  @extend %Inter-normal-600;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+}
+%normal-600-14-20 {
+  @extend %Inter-normal-600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+%normal-600-16-24 {
+  @extend %Inter-normal-600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+

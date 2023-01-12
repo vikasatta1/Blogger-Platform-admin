@@ -1,114 +1,102 @@
-.wrap-add-post-modal{
-  width:526px;
+@import "../variables";
+
+.wrap-add-post-modal {
+  width: 526px;
   height: 624px;
   background: #FCFBFB;
   border-radius: 2px;
 
 }
-.header-add-post-modal{
+
+.header-add-post-modal {
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid  #DEDBDC;
+  border-bottom: 1px solid #DEDBDC;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
 
-  h3{
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 2.4rem;
+  h3 {
+    @extend %normal-500-20-24;
     color: #797476;
 
   }
 }
-.add-post-modal-content{
+
+.add-post-modal-content {
   padding: 2.4rem 2.4rem 0 2.4rem;
 }
-.img-add-post-modal{
+
+.img-add-post-modal {
   width: 180px;
   height: 108px;
   border: 1px solid #DEDBDC;
   border-radius: 2px;
   margin-bottom: 2.4rem;
 }
-.add-post-modal-form{
 
-  p{
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+.add-post-modal-form {
+
+  p {
+    @extend %normal-400-16-24;
     color: #737067;
     margin-top: 2.4rem;
     margin-bottom: 0.6rem;
   }
-  input{
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
+
+  input {
+    @extend %normal-400-18-24;
     color: #1A1718;
   }
-  textarea{
+
+  textarea {
     width: 100% !important;
     height: 13rem !important;
   }
+
   select {
+    @extend %normal-400-16-24;
     width: 100%;
     height: 3.6rem;
     border: 1px solid #DEDBDC;
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
     color: #1A1718;
   }
 
 }
 
-.input-post-name-modal{
-width: 100%;
+.input-post-name-modal {
+  width: 100%;
   border: none;
   border-bottom: 1px solid #DEDBDC;
 
 }
-.input-post-blog-modal{
+
+.input-post-blog-modal {
+  @extend %normal-400-16-24;
   width: 100%;
   height: 3.6rem;
   border: 1px solid #DEDBDC;
-  font-family: 'Inter',serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
   color: #1A1718;
   padding-left: 1.2rem;
 }
 
-.wrap-add-post-modal-button{
+.wrap-add-post-modal-button {
   margin-top: 2.3rem;
   display: flex;
   justify-content: end;
-  button{
-    width:12.4rem;
+
+  button {
+    @extend %normal-600-14-20;
+    width: 12.4rem;
     height: 3.6rem;
     border: none;
     background: #F8346B;
     box-shadow: 0px 4px 18px rgba(248, 52, 107, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
     border-radius: 2px;
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2rem;
     color: #FCFBFB;
-    &:disabled{
+
+    &:disabled {
       background: #FB85A6;
     }
   }

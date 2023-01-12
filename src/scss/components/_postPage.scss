@@ -13,11 +13,7 @@
   margin-bottom: 4.5rem;
 
   .description-post__p {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    @extend %normal-600-16-24;
     margin-left: 2rem;
   }
 
@@ -30,27 +26,20 @@
 }
 
 .options-post {
-  .options-post__date{
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height:1.6rem;
+  .options-post__date {
+    @extend %normal-400-12-16;
     letter-spacing: 0.02em;
     color: $neutral-Dark-plus30;
   }
+
   .options-post__name {
     display: flex;
     align-items: center;
     margin-bottom: 0.8rem;
 
     p {
+      @extend %normal-400-12-16;
       margin-left: 1.2rem;
-      font-family: 'Inter', serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 1.6rem;
       letter-spacing: 0.02em;
       color: $neutral-Dark-plus30;
       padding-top: 0.5rem;
@@ -58,19 +47,12 @@
   }
 
   h2 {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.2rem;
-    line-height: 2.4rem;
+    @extend %normal-600-22-24;
   }
 }
-.post-text{
-  p{
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+
+.post-text {
+  p {
+    @extend %normal-400-16-24;
   }
 }

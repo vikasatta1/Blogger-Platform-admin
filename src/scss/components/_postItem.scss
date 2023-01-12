@@ -3,19 +3,11 @@
 .postItem {
   position: relative;
   h3 {
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    @extend %normal-600-16-24;
   }
 
   p {
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    @extend %normal-400-14-24;
   }
 
   width: 35rem;

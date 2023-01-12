@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {blogs} from "../../redux/blogs";
 import BlogItem from "../../components/blog/BlogItem";
 import vector from "../../assets/vector-button.svg";
@@ -10,6 +10,8 @@ const HomeBlogs = () => {
         navigate('newBlog')
 
     }
+
+
     const blogMap = blogs.map((b) =>
         <BlogItem
             key={b.id}
