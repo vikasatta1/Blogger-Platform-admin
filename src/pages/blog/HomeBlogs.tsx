@@ -1,17 +1,17 @@
-import React, {useEffect} from 'react';
-import {blogs} from "../../redux/blogs";
+import React from 'react';
 import BlogItem from "../../components/blog/BlogItem";
-import vector from "../../assets/vector-button.svg";
 import {useNavigate} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "../../redux/store";
+import {blogType} from "../../redux/blogs";
 
 const HomeBlogs = () => {
+    const blogs = useSelector<AppRootStateType,Array<blogType>>(state => state.blogs )
     const navigate = useNavigate()
     const navigateHandler = () => {
         navigate('newBlog')
 
     }
-
-
     const blogMap = blogs.map((b) =>
         <BlogItem
             key={b.id}

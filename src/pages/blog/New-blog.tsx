@@ -2,8 +2,26 @@ import React, {useState} from 'react';
 import vector from '../../assets/rectangle-right.svg'
 import arrowLeft from '../../assets/arrow-left.svg'
 import BackTo from "../../components/common/BackTo";
+import {useDispatch} from "react-redux";
+import {addBlogAC} from "../../redux/blogs-reducer";
+import {useNavigate} from "react-router-dom";
 
 const NewBlog = () => {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const [blogName,setBlogName] = useState('')
+    const [blogWebsite,setBlogWebsite] = useState('')
+    const [blogDescription,setBlogDescription] = useState('')
+    const blog = {
+        id: "25",
+        name: "New blog",
+        description: "что то там",
+        websiteUrl: "https://www.youtube.com/"
+    }
+    const addBlog = () => {
+        dispatch(addBlogAC(blog))
+        navigate('/blogs')
+    }
     const [] = useState('')
     return (
         <>
@@ -27,7 +45,7 @@ const NewBlog = () => {
                     <textarea />
                 </div>
                 <div className={'wrap-button_blog-page'}>
-                    <button>Add blog</button>
+                    <button onClick={addBlog}>Add blog</button>
                 </div>
             </div>
         </>
